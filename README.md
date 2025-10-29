@@ -167,25 +167,42 @@ module application.examen_git {
 }
 
 # Estructura Deseada 
+
 application.examen_git/
+
  ├─ App.java                     // main JavaFX
+ 
  ├─ PrimaryController.java       // controlador principal (UI)
+ 
  ├─ resources/application/examen_git/
+ 
  │   ├─ primary.fxml             // vista principal
+ 
  │   └─ styles.css               // (opcional)
+ 
  ├─ domain/
+ 
  │   ├─ User.java                // datos de usuario (Jackson)
+ 
  │   ├─ Repo.java                // repos (propiedades JavaFX)
+ 
  │   └─ LanguageStats.java       // porcentajes por lenguaje
+ 
  ├─ service/
+ 
  │   ├─ GitHubApi.java           // llamadas HTTP a GitHub
+ 
  │   └─ HttpClientFactory.java   // cliente HTTP reutilizable
+ 
  └─ util/
+ 
      └─ Formatter.java           // fechas bonitas, helpers
+     
 # Salida esperada 
 <img width="1210" height="776" alt="image" src="https://github.com/user-attachments/assets/3d3babb1-0dc2-4431-88e9-daa2976c430a" />
 
   
+
 
 
 
