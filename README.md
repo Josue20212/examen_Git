@@ -48,71 +48,122 @@ Ejecuta el proyecto.
 
 # POM Recomendada 
 <properties>
+  
   <maven.compiler.release>17</maven.compiler.release>
+  
   <javafx.version>23</javafx.version>
+  
   <jackson.version>2.18.0</jackson.version>
+  
 </properties>
 
 <dependencies>
+  
   <dependency>
+    
     <groupId>org.openjfx</groupId>
+    
     <artifactId>javafx-controls</artifactId>
+    
     <version>${javafx.version}</version>
+    
   </dependency>
+  
   <dependency>
+    
     <groupId>org.openjfx</groupId>
+  
     <artifactId>javafx-fxml</artifactId>
+    
     <version>${javafx.version}</version>
+    
   </dependency>
 
   <dependency>
+    
     <groupId>com.fasterxml.jackson.core</groupId>
+    
     <artifactId>jackson-databind</artifactId>
+    
     <version>${jackson.version}</version>
+    
   </dependency>
+  
   <dependency>
+    
     <groupId>com.fasterxml.jackson.core</groupId>
+    
     <artifactId>jackson-annotations</artifactId>
+    
     <version>${jackson.version}</version>
+    
   </dependency>
+  
 </dependencies>
 
 <build>
+  
   <plugins>
+    
     <plugin>
+    
       <groupId>org.apache.maven.plugins</groupId>
+      
       <artifactId>maven-compiler-plugin</artifactId>
+      
       <version>3.13.0</version>
+      
       <configuration>
+      
         <release>${maven.compiler.release}</release>
+        
       </configuration>
+      
     </plugin>
 
     <plugin>
       <groupId>org.openjfx</groupId>
+      
       <artifactId>javafx-maven-plugin</artifactId>
+      
       <version>0.0.9</version>
+      
       <configuration>
+      
         <mainClass>application.examen_git.App</mainClass>
+        
       </configuration>
+      
     </plugin>
+    
   </plugins>
+  
 </build>
 
 # Model Info recomendado 
+
 module application.examen_git {
+
   requires java.net.http;
+  
   requires javafx.controls;
+  
   requires javafx.fxml;
+  
   requires com.fasterxml.jackson.databind;
+  
   requires com.fasterxml.jackson.annotation;
+  
   requires java.desktop; // para Desktop.browse (abrir enlaces)
 
   opens application.examen_git to javafx.fxml;
+  
   exports application.examen_git;
 
   // Jackson deserializa dominios
+  
   opens application.examen_git.domain to com.fasterxml.jackson.databind;
+  
 }
 
 # Estructura Deseada 
@@ -135,6 +186,7 @@ application.examen_git/
 <img width="1210" height="776" alt="image" src="https://github.com/user-attachments/assets/3d3babb1-0dc2-4431-88e9-daa2976c430a" />
 
   
+
 
 
 
