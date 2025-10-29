@@ -14,3 +14,23 @@ Mostrar el porcentaje por lenguaje en una ListView.
 
 Indicar el Rate Limit de GitHub: OK (N repos) — limit: X, remaining: Y, reset: hh:mm:ss.
 
+# Tecnologias
+
+Java 17+
+
+JavaFX 23 (controls, fxml)
+
+java.net.http (HTTP client)
+
+Jackson (jackson-databind, jackson-annotations) para JSON
+
+Maven
+
+# Requisitos 
+JDK 17 o superior
+
+Maven 3.9+
+
+Internet (la app consulta api.github.com)
+
+
