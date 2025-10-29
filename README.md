@@ -35,9 +35,11 @@ Internet (la app consulta api.github.com)
 
 # Como usar
 git clone https://github.com/Josue20212/examen_Git.git
+
 cd examen_Git
 
 O tambien..
+
 Importa el proyecto Maven.
 
 Asegúrate que la clase principal sea application.examen_git.App.
@@ -133,6 +135,7 @@ application.examen_git/
 <img width="1210" height="776" alt="image" src="https://github.com/user-attachments/assets/3d3babb1-0dc2-4431-88e9-daa2976c430a" />
 
   
+
 
 
 
